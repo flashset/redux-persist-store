@@ -7,8 +7,5 @@ const PersistWrapper = (props) => {
 };
 const mapStateToProps = (state) => {
   saveState(state);
-  return {
-    initiated: true,
-  };
 };
 export default connect(mapStateToProps)(PersistWrapper);
