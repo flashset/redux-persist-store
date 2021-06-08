@@ -1,9 +1,9 @@
 {
   "name": "@sparkyflash/redux-persist-store",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "private": false,
   "main": "dist/index.js",
-  "homepage": "http://www.sparkyflash.com",
+  "homepage": "http://www.sparkyflash.com/tech",
   "babel": {
     "presets": [
       "@babel/preset-react"

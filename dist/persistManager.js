@@ -1,5 +1,4 @@
 const globalOptions = {
-  storage: sessionStorage,
   encryption: {
     encrypt: data => {
       return data;
@@ -11,11 +10,17 @@ const globalOptions = {
 };
 
 const setOptions = options => {
-  if (!options.storage) {
+  globalOptions.storage = sessionStorage; // by default sessionStorage
+
+  if (!options) {
+    return;
+  }
+
+  if (options.storage) {
     globalOptions.storage = options.storage;
   }
 
-  if (!options.encryption) {
+  if (options.encryption) {
     globalOptions.encryption = options.encryption;
   }
 };

@@ -4,7 +4,7 @@
 
 ## Current Version
 
-1.0.0
+1.0.8
 
 ## Install
 
@@ -18,7 +18,7 @@ npm install --save @sparkyflash/redux-persist-store
 
 ### 2 Easy Steps
 
-### 1. Initiating persistState to the redux store. by default storage will considered as sessionStorage
+### 1. Initiating persistState to the redux store. By default sessionStorage will be considered for storage.
 
 ```js
 import { createStore as reduxCreateStore, applyMiddleware } from "redux";
@@ -32,7 +32,7 @@ const createStore = () =>
 export default createStore;
 ```
 
-#### Even you can pass the options to persistState to specify the storage. it is flexible to inject any strorage and ecryption/serialization algorithm in encryption option.
+#### Even you can pass options to persistState to specify the storage. It is flexible to inject any ecryption/serialization algorithm in encryption property.
 
 ```js
 import { createStore as reduxCreateStore, applyMiddleware } from "redux";
