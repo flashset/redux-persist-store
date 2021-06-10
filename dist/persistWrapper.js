@@ -8,6 +8,8 @@ const PersistWrapper = props => {
 
 const mapStateToProps = state => {
   saveState(state);
+  return { ...state
+  };
 };
 
 export default connect(mapStateToProps)(PersistWrapper);
